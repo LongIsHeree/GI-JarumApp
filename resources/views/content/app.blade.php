@@ -11,6 +11,7 @@
     <meta content="Themesdesign" name="author">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('public/assets/images/logo/icon.PNG') }}">
+    
     @include('layouts.css')
 </head>
 
@@ -53,7 +54,8 @@
     <!-- end main content -->
 
     @include('layouts.setting')
-
+<!-- Transisition GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     @include('layouts.script')
 
 

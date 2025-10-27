@@ -2,12 +2,13 @@
 
 ## About
 
-Template project GI berbasis laravel 12, terintegrasi dengan:
+Aplikasi manajemen Barang(Jarum) GI berbasis laravel 12, terintegrasi dengan:
 
 - DataTable
 - SweetAlert2
 - Select2
 - Tailwick Templates
+- Animejs
 
 ## Instalation
 
@@ -15,6 +16,10 @@ Template project GI berbasis laravel 12, terintegrasi dengan:
 - Buka cmd di directory-nya
 - Run ``composer install``
 - Run ``npm install``
+- Run ``npm install animejs``
 - Run ``php artisan key:generate``
 - Run ``php artisan migrate``
+- Run ``npm run dev`` dan jangan close terminal(untuk load animasi animejs)
 - Akses langsung di http://localhost/<nama folder project> tanpa harus menggunakan ``php artisan serve``
+
+

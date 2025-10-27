@@ -27,6 +27,7 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
+    'asset_url' => env('ASSET_URL', null),
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +41,7 @@ return [
     */
 
     'debug' => (bool) env('APP_DEBUG', false),
-
+    'debug' => env('APP_DEBUG', false), // Ubah ke false di production
     /*
     |--------------------------------------------------------------------------
     | Application URL
