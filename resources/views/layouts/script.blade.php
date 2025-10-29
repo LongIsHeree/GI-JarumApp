@@ -36,5 +36,4 @@
 
 <!-- App js -->
 <script src="{{ asset('public/assets/js/app.js') }}"></script>
-<!-- Transisition GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+

@@ -19,7 +19,7 @@ Aplikasi manajemen Barang(Jarum) GI berbasis laravel 12, terintegrasi dengan:
 - Run ``npm install animejs``
 - Run ``php artisan key:generate``
 - Run ``php artisan migrate``
-- Run ``npm run dev`` dan jangan close terminal(untuk load animasi animejs)
+- Run ``npm run build`` 
 - Akses langsung di http://localhost/<nama folder project> tanpa harus menggunakan ``php artisan serve``
 
 

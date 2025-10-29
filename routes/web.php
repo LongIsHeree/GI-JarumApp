@@ -12,3 +12,4 @@ Route::get('/auth/getQuote', [\App\Http\Controllers\AuthController::class, 'getQ
 Route::post('/auth/sign_in', [\App\Http\Controllers\AuthController::class, 'signIn']);
 // Content
 Route::get('/content/dashboard', [\App\Http\Controllers\ContentController::class, 'dashboard'])->name('content.dashboard');
+Route::get('/content/masterMerek', [\App\Http\Controllers\ContentController::class, 'masterMerek'])->name('content.masterMerek');
