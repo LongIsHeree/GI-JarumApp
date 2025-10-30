@@ -47,13 +47,13 @@
 
 </style>
 <div class="mt-3 mb-3 mr-2 ml-2">
-<h3 class="text-slate-600">Merek</h3>
+<h3 class="text-slate-600">Pengguna</h3>
 </div>
 
 <div class="card mt-3 mb-3 mr-2 ml-2 rounded-b-2xl">
     <div class="card-header bg-slate-200 ">
     <button type="button" class="btn bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4  inline-flex items-center mb-2 mt-2" style="
-    justify-content: flex-end;" id="addBtn" data-toggle="modal" data-target="#modalMerek">
+    justify-content: flex-end;" id="addBtn" data-toggle="modal" data-target="#modalPengguna">
                <span id="addIcon" 
                     class="min-w-[0.50rem] inline-block text-start text-[16px]">
                     <i data-lucide="file-plus" class="h-4 transition group-hover/menu-link:animate-icons fill-slate-100 group-hover/menu-link:fill-blue-200"></i>
@@ -84,16 +84,16 @@
     class="fixed flex-col hidden transition-all duration-300 ease-in-out left-2/4 z-drawer -translate-x-2/4 -translate-y-2/4 show">
     <div class="w-screen lg:w-[55rem] bg-white shadow rounded-md dark:bg-zink-600 flex flex-col h-full">
         <div class="flex items-center justify-between p-4 border-b border-slate-200 dark:border-zink-500">
-            <h5 class="text-16">Tambah Merek</h5>
+            <h5 class="text-16">Tambah Pengguna</h5>
             <button data-modal-close="modalForm"
                 class="transition-all duration-200 ease-linear text-slate-500 hover:text-red-500 dark:text-zink-200 dark:hover:text-red-500"><i
                     data-lucide="x" class="size-5" ></i></button>
         </div>
         <div class="max-h-[calc(theme('height.screen')_-_180px)] p-4 overflow-y-auto">
-             <form id = "merekForm" method="POST" action="{{ url('process/addMerek') }}" enctype="multipart/form-data" >
+             <form id = "PenggunaForm" method="POST" action="{{ url('process/addPengguna') }}" enctype="multipart/form-data" >
             <div class="grid grid-cols-1 gap-5 md:grid-cols-1 xl:grid-cols-1 mx-5 ">
                 <div class="mb-3">
-                    <label for="inputText" class="inline-block mb-2 text-base font-medium">Nama Merek <span
+                    <label for="inputText" class="inline-block mb-2 text-base font-medium">Nama Pengguna <span
                             class="text-red-500">*</span></label>
                     <input type="text" id="inputText"
                         class="form-input border-slate-200 dark:border-zink-500 focus:outline-none focus:border-custom-500 disabled:bg-slate-100 dark:disabled:bg-zink-600 disabled:border-slate-300 dark:disabled:border-zink-500 dark:disabled:text-zink-200 disabled:text-slate-500 dark:text-zink-100 dark:bg-zink-700 dark:focus:border-custom-800 placeholder:text-slate-400 dark:placeholder:text-zink-200"

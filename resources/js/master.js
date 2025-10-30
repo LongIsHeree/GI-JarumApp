@@ -51,7 +51,7 @@ let backDropOverlay = document.getElementById("backDropDiv");
         });
     }
     addBtn.addEventListener('click',function(){
-toggleElementState('modalMerek',true,50);
+toggleElementState('modalForm',true,50);
 animate('#addIcon', {
                 y: [
     { to: '-1.00rem', ease: 'outExpo', duration: 400 },
@@ -60,7 +60,16 @@ animate('#addIcon', {
                 duration: 400,
                 easing: 'easeOutBounce'
             });
+let submitBtn = document.getElementById('submitBtn');
+submitBtn.addEventListener('click', function(){
+animate('#submitIcon', {
+               translateX:[0,80],
+                opacity : [1,1],
+                duration: 1000,
+                easing: 'easeOutBounce'
+            });
 
+});
 });
 });
 

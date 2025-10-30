@@ -13,3 +13,6 @@ Route::post('/auth/sign_in', [\App\Http\Controllers\AuthController::class, 'sign
 // Content
 Route::get('/content/dashboard', [\App\Http\Controllers\ContentController::class, 'dashboard'])->name('content.dashboard');
 Route::get('/content/masterMerek', [\App\Http\Controllers\ContentController::class, 'masterMerek'])->name('content.masterMerek');
+Route::get('/content/masterKategori', [\App\Http\Controllers\ContentController::class, 'masterKategori'])->name('content.masterKategori');
+Route::get('/content/masterBarang', [\App\Http\Controllers\ContentController::class, 'masterBarang'])->name('content.masterBarang');
+Route::get('/content/masterPengguna', [\App\Http\Controllers\ContentController::class, 'masterPengguna'])->name('content.masterPengguna');

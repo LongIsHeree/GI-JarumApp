@@ -33,4 +33,29 @@ class ContentController extends Controller
         ];
         return view('master.masterMerek', $data);
     }
+    public function masterKategori(){
+        $data = [
+            'title' => 'Master Kategori | GI-Jarum',
+            'menu' => 'Content',
+            'sub_menu' => 'Merek'
+        ];
+        return view('master.masterKategori', $data);
+    }
+    public function masterBarang(){
+        $data = [
+            'title' => 'Master Barang | GI-Jarum',
+            'menu' => 'Content',
+            'sub_menu' => 'Merek'
+        ];
+        return view('master.masterBarang', $data);
+    }
+    public function masterPengguna(){
+        $data = [
+            'title' => 'Master Pengguna | GI-Jarum',
+            'menu' => 'Content',
+            'sub_menu' => 'Merek'
+        ];
+        return view('master.masterPengguna', $data);
+    }
+    
 }
