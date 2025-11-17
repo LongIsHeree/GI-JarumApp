@@ -74,7 +74,6 @@
                             </tr>
                         </thead>
                         <tbody>
-
                         </tbody>
         </table>
     </div>
@@ -99,17 +98,42 @@
                         class="form-input border-slate-200 dark:border-zink-500 focus:outline-none focus:border-custom-500 disabled:bg-slate-100 dark:disabled:bg-zink-600 disabled:border-slate-300 dark:disabled:border-zink-500 dark:disabled:text-zink-200 disabled:text-slate-500 dark:text-zink-100 dark:bg-zink-700 dark:focus:border-custom-800 placeholder:text-slate-400 dark:placeholder:text-zink-200"
                         required>
                 </div>
-                <div>
+            </div>
+                 <div class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-1 mx-5 ">
+<div class="md:col-span-1">
+<label for="merekSelect">Kategori</label>
+        <select class="merekSelect" id="merekSelect" aria-placeholder="Pilih Merek">
+                    <option></option>
+                    <option value="01">Looper Flatseamer 68217</option>
+                    <option value="02">Tahanan Looper Interlock Kepala Besar</option>
+                    <option value="03">Looper Obras Bawah Hikari 277034</option>
+                    <option value="04">Lidah Flatseamer 2361010</option>
+                    <option value="05">Gigi Flatseamer 68096</option>
+                </select>
+        </div>
+        <div class="md:col-span-1">
+<label for="kategoriSelect">Kategori</label>
+        <select class="kategoriSelect" id="kategoriSelect" aria-placeholder="Pilih Kategori">
+                    <option></option>
+                    <option value="01">Bingkai Jarum</option>
+                    <option value="02">Black Box</option>
+                    <option value="03">Sparepart</option>
+                    <option value="04">Sharp Tools</option>
+                    <option value="05">Jarum</option>
+                </select>
+        </div>
+                 </div>
+                  <div class="grid grid-cols-1 gap-5 md:grid-cols-1 xl:grid-cols-1 mx-5">
+                <div class="mb-3">
                     <label for="textArea" class="inline-block mb-2 text-base font-medium">Keterangan</label>
                     <textarea
                         class="form-input border-slate-200 dark:border-zink-500 focus:outline-none focus:border-custom-500 disabled:bg-slate-100 dark:disabled:bg-zink-600 disabled:border-slate-300 dark:disabled:border-zink-500 dark:disabled:text-zink-200 disabled:text-slate-500 dark:text-zink-100 dark:bg-zink-700 dark:focus:border-custom-800 placeholder:text-slate-400 dark:placeholder:text-zink-200"
                         id="textArea" rows="3"></textarea>
                 </div>
-
             </div>
-           
-        </div>
-        <div class="flex items-center justify-end p-4 mt-auto border-t border-slate-200 dark:border-zink-500">
+            </div>
+                
+            <div class="flex items-center justify-end p-4 mt-auto border-t border-slate-200 dark:border-zink-500">
             <button class="contactButton" type="submit" id="submitBtn">
  Tambah
   <div class="iconButton ">
@@ -131,6 +155,7 @@
         </div>
       
     </div>
-</div>
+        </div>
+      
 @vite(['resources/js/master.js'])
 @endsection

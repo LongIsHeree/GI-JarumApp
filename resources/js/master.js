@@ -1,9 +1,41 @@
 import { animate } from 'animejs';
+import flatpickr from "flatpickr";
+import "flatpickr/dist/flatpickr.min.css";
+
 document.addEventListener('DOMContentLoaded',function(){
+$('#barang_id').select2();
 let tableIn = $('#myTable').DataTable({});
 let addBtn = document.getElementById('addBtn');
 let openModalId = null;
 let openDrawerId = null;
+
+  flatpickr("#tanggal_awal", {
+    dateFormat: "Y-m-d",  // format tanggal
+  });
+  flatpickr("#tanggal_akhir", {
+    dateFormat: "Y-m-d",  // format tanggal
+  });
+
+
+  $('.kategoriSelect').select2({
+        theme: "bootstrap-5",
+        placeholder: "Pilih Kategori",
+        minimumInputLength: 0 ,
+        width: function() {
+            return $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ?
+                '100%' : 'style';
+        }
+    });
+    $('.merekSelect').select2({
+        theme: "bootstrap-5",
+        placeholder: "Pilih Merek",
+        minimumInputLength: 0 ,
+        width: function() {
+            return $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ?
+                '100%' : 'style';
+        }
+    });
+
 // Show Modal Function
 const toggleElementState = (elementId, show, delay) => {
     const bodyElement = document.body;

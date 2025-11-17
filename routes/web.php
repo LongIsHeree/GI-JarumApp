@@ -16,3 +16,8 @@ Route::get('/content/masterMerek', [\App\Http\Controllers\ContentController::cla
 Route::get('/content/masterKategori', [\App\Http\Controllers\ContentController::class, 'masterKategori'])->name('content.masterKategori');
 Route::get('/content/masterBarang', [\App\Http\Controllers\ContentController::class, 'masterBarang'])->name('content.masterBarang');
 Route::get('/content/masterPengguna', [\App\Http\Controllers\ContentController::class, 'masterPengguna'])->name('content.masterPengguna');
+Route::get('/content/transaksiMasuk', [\App\Http\Controllers\ContentController::class, 'transaksiMasuk'])->name('content.transaksiMasuk');
+Route::get('/content/transaksiKeluar', [\App\Http\Controllers\ContentController::class, 'transaksiKeluar'])->name('content.transaksiKeluar');
+Route::get('/content/laporanMasuk', [\App\Http\Controllers\ContentController::class, 'laporanMasuk'])->name('content.laporanMasuk');
+Route::get('/content/laporanKeluar', [\App\Http\Controllers\ContentController::class, 'laporanKeluar'])->name('content.laporanKeluar');
+Route::get('/content/laporanStokBarang', [\App\Http\Controllers\ContentController::class, 'laporanStokBarang'])->name('content.laporanStokBarang');

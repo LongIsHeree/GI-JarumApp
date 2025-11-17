@@ -148,7 +148,7 @@ require_once base_path('public/assets/lang-php/en.php');
                 <ul class="hidden ltr:pl-7 rtl:pr-7" id="dropdownTransaksi">
                     <li class="relative group-data-[layout=horizontal]:shrink-0">
                         <a class="relative flex items-center ltr:pl-3 rtl:pr-3 ltr:pr-5 rtl:pl-5 mx-3 my-1 group/menu-link text-vertical-menu-item-font-size font-normal transition-all duration-75 ease-linear rounded-md py-2.5 text-vertical-menu-item hover:text-vertical-menu-item-hover hover:bg-vertical-menu-item-bg-hover [&.active]:text-vertical-menu-item-active [&.active]:bg-vertical-menu-item-bg-active group-data-[sidebar=dark]:text-vertical-menu-item-dark group-data-[sidebar=dark]:hover:text-vertical-menu-item-hover-dark group-data-[sidebar=dark]:dark:hover:text-custom-500 group-data-[sidebar=dark]:hover:bg-vertical-menu-item-bg-hover-dark group-data-[sidebar=dark]:dark:hover:bg-zink-600"
-                            href="">
+                            href="{{route('content.transaksiMasuk')}}">
                             <span id="itemInIcon" class="min-w-[1.75rem] inline-block text-start text-[16px]">
                                 <i data-lucide="folder-input"
                                     class="h-4 transition group-hover/menu-link:animate-icons fill-slate-100 group-hover/menu-link:fill-blue-200"></i>
@@ -158,7 +158,7 @@ require_once base_path('public/assets/lang-php/en.php');
                     </li>
                     <li class="relative group-data-[layout=horizontal]:shrink-0">
                         <a class="relative flex items-center ltr:pl-3 rtl:pr-3 ltr:pr-5 rtl:pl-5 mx-3 my-1 group/menu-link text-vertical-menu-item-font-size font-normal transition-all duration-75 ease-linear rounded-md py-2.5 text-vertical-menu-item hover:text-vertical-menu-item-hover hover:bg-vertical-menu-item-bg-hover [&.active]:text-vertical-menu-item-active [&.active]:bg-vertical-menu-item-bg-active group-data-[sidebar=dark]:text-vertical-menu-item-dark group-data-[sidebar=dark]:hover:text-vertical-menu-item-hover-dark group-data-[sidebar=dark]:dark:hover:text-custom-500 group-data-[sidebar=dark]:hover:bg-vertical-menu-item-bg-hover-dark group-data-[sidebar=dark]:dark:hover:bg-zink-600"
-                            href="">
+                            href="{{route('content.transaksiKeluar')}}">
                             <span id="itemOutIcon" class="min-w-[1.75rem] inline-block text-start text-[16px]">
                                 <i data-lucide="folder-output"
                                     class="h-4 transition group-hover/menu-link:animate-icons fill-slate-100 group-hover/menu-link:fill-blue-200"></i>
@@ -185,7 +185,7 @@ require_once base_path('public/assets/lang-php/en.php');
                 <ul class="hidden ltr:pl-7 rtl:pr-7" id="dropdownLaporan">
                     <li class="relative group-data-[layout=horizontal]:shrink-0">
                         <a class="relative flex items-center ltr:pl-3 rtl:pr-3 ltr:pr-5 rtl:pl-5 mx-3 my-1 group/menu-link text-vertical-menu-item-font-size font-normal transition-all duration-75 ease-linear rounded-md py-2.5 text-vertical-menu-item hover:text-vertical-menu-item-hover hover:bg-vertical-menu-item-bg-hover [&.active]:text-vertical-menu-item-active [&.active]:bg-vertical-menu-item-bg-active group-data-[sidebar=dark]:text-vertical-menu-item-dark group-data-[sidebar=dark]:hover:text-vertical-menu-item-hover-dark group-data-[sidebar=dark]:dark:hover:text-custom-500 group-data-[sidebar=dark]:hover:bg-vertical-menu-item-bg-hover-dark group-data-[sidebar=dark]:dark:hover:bg-zink-600"
-                            href="">
+                            href="{{route('content.laporanMasuk')}}">
                             <span id="itemInIcon" class="min-w-[1.75rem] inline-block text-start text-[16px]">
                                 <i data-lucide="arrow-down-to-line"
                                     class="h-4 transition group-hover/menu-link:animate-icons fill-slate-100 group-hover/menu-link:fill-blue-200"></i>
@@ -195,7 +195,7 @@ require_once base_path('public/assets/lang-php/en.php');
                     </li>
                     <li class="relative group-data-[layout=horizontal]:shrink-0">
                         <a class="relative flex items-center ltr:pl-3 rtl:pr-3 ltr:pr-5 rtl:pl-5 mx-3 my-1 group/menu-link text-vertical-menu-item-font-size font-normal transition-all duration-75 ease-linear rounded-md py-2.5 text-vertical-menu-item hover:text-vertical-menu-item-hover hover:bg-vertical-menu-item-bg-hover [&.active]:text-vertical-menu-item-active [&.active]:bg-vertical-menu-item-bg-active group-data-[sidebar=dark]:text-vertical-menu-item-dark group-data-[sidebar=dark]:hover:text-vertical-menu-item-hover-dark group-data-[sidebar=dark]:dark:hover:text-custom-500 group-data-[sidebar=dark]:hover:bg-vertical-menu-item-bg-hover-dark group-data-[sidebar=dark]:dark:hover:bg-zink-600"
-                            href="">
+                            href="{{route('content.laporanKeluar')}}">
                             <span id="itemOutIcon" class="min-w-[1.75rem] inline-block text-start text-[16px]">
                                 <i data-lucide="arrow-up-from-line"
                                     class="h-4 transition group-hover/menu-link:animate-icons fill-slate-100 group-hover/menu-link:fill-blue-200"></i>
@@ -205,7 +205,7 @@ require_once base_path('public/assets/lang-php/en.php');
                     </li>
                     <li class="relative group-data-[layout=horizontal]:shrink-0">
                         <a class="relative flex items-center ltr:pl-3 rtl:pr-3 ltr:pr-5 rtl:pl-5 mx-3 my-1 group/menu-link text-vertical-menu-item-font-size font-normal transition-all duration-75 ease-linear rounded-md py-2.5 text-vertical-menu-item hover:text-vertical-menu-item-hover hover:bg-vertical-menu-item-bg-hover [&.active]:text-vertical-menu-item-active [&.active]:bg-vertical-menu-item-bg-active group-data-[sidebar=dark]:text-vertical-menu-item-dark group-data-[sidebar=dark]:hover:text-vertical-menu-item-hover-dark group-data-[sidebar=dark]:dark:hover:text-custom-500 group-data-[sidebar=dark]:hover:bg-vertical-menu-item-bg-hover-dark group-data-[sidebar=dark]:dark:hover:bg-zink-600"
-                            href="">
+                            href="{{route('content.laporanStokBarang')}}">
                             <span id="itemStockIcon" class="min-w-[1.75rem] inline-block text-start text-[16px]">
                                 <i data-lucide="warehouse"
                                     class="h-4 transition group-hover/menu-link:animate-icons fill-slate-100 group-hover/menu-link:fill-blue-200"></i>

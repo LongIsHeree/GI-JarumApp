@@ -57,5 +57,49 @@ class ContentController extends Controller
         ];
         return view('master.masterPengguna', $data);
     }
+
+    public function transaksiMasuk(){
+        $data = [
+            'title' => 'Barang Masuk | GI-Jarum',
+            'menu' => 'Content',
+            'sub_menu' => 'Merek'
+        ];
+        return view('transaksi.barangMasuk', $data);
+    }
+    public function transaksiKeluar(){
+        $data = [
+            'title' => 'Barang Keluar | GI-Jarum',
+            'menu' => 'Content',
+            'sub_menu' => 'Merek'
+        ];
+        return view('transaksi.barangKeluar', $data);
+    }
+
+    public function laporanMasuk(){
+        $data = [
+            'title' => 'Laporan Barang Masuk | GI-Jarum',
+            'menu' => 'Content',
+            'sub_menu' => 'Merek'
+        ];
+        return view('laporan.laporanMasuk', $data);
+    }
+
+    public function laporanKeluar(){
+        $data = [
+            'title' => 'Laporan Barang Keluar | GI-Jarum',
+            'menu' => 'Content',
+            'sub_menu' => 'Merek'
+        ];
+        return view('laporan.laporanKeluar', $data);
+    }
+
+    public function laporanStokBarang(){
+        $data = [
+            'title' => 'Laporan Stok Barang | GI-Jarum',
+            'menu' => 'Content',
+            'sub_menu' => 'Merek'
+        ];
+        return view('laporan.laporanStokBarang', $data);
+    }
     
 }
